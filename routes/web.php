@@ -55,7 +55,9 @@ Route::prefix('ruta')->group(function(){
             //return view 'algo', "falta parentesis recto"'nombre'=>'mercado pago'"falta parentesis recto" ;
             return view('algo');
         })->name('user');
+                public funvtion (){
 
+                };
             //rutas  renombreados
             Route::get('/user/index',[grupoRController::class,'index'])->name('home');
             Route::get('/user/eliminar',[grupoRController::class,'destroy'])->name('borrar');
@@ -88,3 +90,8 @@ Route::get('/productos',[algoController::class, 'mostrarProductos'])-> middlewar
 Route::get('/no_admin', [algoController::class, 'noAdmin'])->name('no_admin');
 //como algo controller tenia una nuevaR sandola tube que comentarla para que funcione
 //nuevaR devuelve un id que se le pasa desde url
+
+
+
+
+
